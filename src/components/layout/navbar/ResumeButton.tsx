@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 export default function ResumeButton() {
   return (
     <a
-      href="https://drive.google.com/file/d/1GQ14Uk15s-k9kkazth5PmCz17CMxp0kI/view?usp=drive_link"
+      href="https://drive.google.com/file/d/1dKqcWcLs5vJATPHnMt9p0cn9Dhmf5obF/view?usp=drive_link"
       target="_blank"
       rel="noreferrer"
       className="

@@ -2,44 +2,38 @@ import ExperienceCard from "./ExperienceCard";
 
 const experiences = [
   {
-    year: "04/2025 - 12/2025",
+    year: "04/2025 — 12/2025",
     role: "Frontend Developer",
     company: "Thegigs.co",
     description:
-      "Building scalable frontend systems and premium user experiences using React, Next.js, TypeScript, and modern component architecture.",
+      "Built scalable frontend systems and premium user experiences using React, Next.js, TypeScript, and modern component architecture in a fast-paced startup environment.",
   },
-
   {
     year: "11/2025 — Present",
     role: "Frontend & Backend Engineer",
     company: "Rouvoo",
     description:
-      "Built frontend and backend products for and with the Rouvoo team. Worked across APIs, UI systems, databases, architecture, and production-ready application engineering.",
+      "Owned full-stack product development — from APIs and database architecture to UI systems and production-ready application engineering across the stack.",
   },
-
   {
     year: "04/2025 — Present",
     role: "Frontend Engineer",
-    company: "Browpay",
+    company: "Browpay (Fintech)",
     description:
-      "Developed responsive and accessible fintech interfaces while collaborating closely with backend systems and product-focused workflows.",
+      "Developed responsive, accessible fintech interfaces. Collaborated closely with backend systems and product teams to ship financial tools that users trust.",
   },
-
   {
     year: "2022 — Present",
     role: "Freelance Developer",
     company: "Self Employed",
     description:
-      "Building web applications, admin dashboards, landing pages, mobile apps, and scalable frontend systems for clients and personal products.",
+      "Building web apps, admin dashboards, landing pages, mobile applications, and scalable frontend systems for clients and personal products across industries.",
   },
 ];
 
 export default function ExperienceTimeline() {
   return (
     <div className="relative">
-      {/* timeline line */}
-      <div className="absolute left-27 top-0 hidden h-full w-px bg-white/8 md:block" />
-
       <div className="flex flex-col">
         {experiences.map((experience, index) => (
           <ExperienceCard
@@ -48,8 +42,6 @@ export default function ExperienceTimeline() {
             delay={index * 0.08}
           />
         ))}
-
-        <div className="border-t border-white/8" />
       </div>
     </div>
   );

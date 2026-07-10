@@ -1,7 +1,7 @@
 import Reveal from "@/components/ui/reveal/Reveal";
-
 import SkillCategory from "./SkillCategory";
 import Section from "@/components/layout/Section";
+import SectionLabel from "@/components/ui/section-label/SectionLabel";
 
 const skillGroups = [
   {
@@ -13,24 +13,21 @@ const skillGroups = [
       { label: "Vue.js", highlighted: true },
       { label: "JavaScript" },
       { label: "Tailwind CSS" },
-      { label: "HTML" },
-      { label: "CSS" },
+      { label: "HTML / CSS" },
     ],
   },
-
   {
     title: "Backend & Database",
     skills: [
       { label: "PHP", highlighted: true },
+      { label: "Node.js", highlighted: true },
       { label: "SQL", highlighted: true },
       { label: "MySQL", highlighted: true },
       { label: "REST APIs" },
-      { label: "Backend Architecture" },
-      { label: "Database Design" },
       { label: "Supabase" },
+      { label: "Database Design" },
     ],
   },
-
   {
     title: "Mobile",
     skills: [
@@ -38,11 +35,9 @@ const skillGroups = [
       { label: "Expo", highlighted: true },
       { label: "Flutter", highlighted: true },
       { label: "Cross Platform" },
-      { label: "Android" },
-      { label: "iOS" },
+      { label: "Android / iOS" },
     ],
   },
-
   {
     title: "Animation & 3D",
     skills: [
@@ -51,29 +46,25 @@ const skillGroups = [
       { label: "Three.js" },
       { label: "Micro Interactions" },
       { label: "Scroll Animations" },
-      { label: "CSS Animation" },
     ],
   },
-
   {
     title: "Architecture",
     skills: [
       { label: "Component Design" },
-      { label: "Performance Optimization" },
-      { label: "Reusable Systems" },
+      { label: "Performance" },
       { label: "State Management" },
+      { label: "Reusable Systems" },
       { label: "Real-time Features" },
     ],
   },
-
   {
     title: "Workflow",
     skills: [
       { label: "Git / GitHub" },
       { label: "Vercel" },
+      { label: "Figma" },
       { label: "Problem Solving" },
-      { label: "Fast Learner" },
-      { label: "Collaboration" },
       { label: "Always Shipping" },
     ],
   },
@@ -81,15 +72,13 @@ const skillGroups = [
 
 export default function SkillsSection() {
   return (
-  <Section id="projects" className="relative overflow-hidden">
-      <div></div>
-      <p className="mb-10 flex items-center gap-4 font-mono text-[11px] uppercase tracking-[0.3em] text-primary">
-        03 / Skills
-        <span className="h-px w-12 bg-primary" />
-      </p>
-
+    <Section id="skills">
       <Reveal>
-        <h2 className="mb-16 font-display text-[clamp(3.5rem,8vw,7rem)] leading-[0.88] tracking-[-0.04em]">
+        <SectionLabel number="03" title="Stack" />
+      </Reveal>
+
+      <Reveal delay={0.1}>
+        <h2 className="mb-16 font-display text-[clamp(3.2rem,7vw,6rem)] leading-[0.88] tracking-[-0.04em]">
           TECH
           <br />
           STACK
@@ -102,7 +91,7 @@ export default function SkillsSection() {
             key={group.title}
             title={group.title}
             skills={group.skills}
-            delay={index * 0.08}
+            delay={index * 0.06}
           />
         ))}
       </div>

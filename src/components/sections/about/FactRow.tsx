@@ -5,12 +5,11 @@ interface Props {
 
 export default function FactRow({ label, value }: Props) {
   return (
-    <div className="flex justify-between py-4 border-b border-white/10">
-      <span className="text-xs tracking-[0.2em] uppercase text-white/40">
+    <div className="flex justify-between border-b border-border py-4">
+      <span className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/35">
         {label}
       </span>
-
-      <span className="text-sm text-white/80">{value}</span>
+      <span className="text-sm text-white/75">{value}</span>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 *,
 *::before,
 *::after {
@@ -10,8 +9,11 @@
 @theme {
   --color-bg: #080808;
   --color-surface: #0e0e0e;
+  --color-surface-2: #131313;
   --color-border: #1c1c1c;
+  --color-border-light: #252525;
   --color-text: #f0ece6;
+  --color-text-secondary: #9c9c9c;
   --color-dim: #555;
   --color-dim2: #333;
   --color-primary: #b8ff00;
@@ -31,6 +33,7 @@ body {
   font-family: var(--font-body);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -51,13 +54,8 @@ body {
 }
 
 @keyframes scroll-line {
-  0% {
-    left: -100%;
-  }
-
-  100% {
-    left: 100%;
-  }
+  0% { left: -100%; }
+  100% { left: 100%; }
 }
 
 .animate-scroll-line {
@@ -65,23 +63,10 @@ body {
 }
 
 @keyframes grain {
-
-  0%,
-  100% {
-    transform: translate(0, 0);
-  }
-
-  25% {
-    transform: translate(-3%, -3%);
-  }
-
-  50% {
-    transform: translate(3%, 3%);
-  }
-
-  75% {
-    transform: translate(-2%, 2%);
-  }
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-3%, -3%); }
+  50% { transform: translate(3%, 3%); }
+  75% { transform: translate(-2%, 2%); }
 }
 
 .animate-grain {
