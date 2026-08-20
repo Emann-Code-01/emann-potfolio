@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "lucide-react";
+
 import Section from "@/components/layout/Section";
 import SectionLabel from "@/components/ui/section-label/SectionLabel";
 import Reveal from "@/components/ui/reveal/Reveal";
@@ -32,6 +34,23 @@ export default function ProjectsSection() {
       <div className="relative z-10 mt-16">
         <ProjectGrid />
       </div>
+
+      <Reveal delay={0.3}>
+        <div className="relative z-10 mt-16 flex justify-center">
+          <a
+            href="https://github.com/emanncode?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group inline-flex items-center gap-3 border border-border bg-transparent px-8 py-4 font-display text-lg uppercase tracking-[0.2em] text-text transition-all duration-300 hover:border-primary hover:text-primary"
+          >
+            View All Projects
+            <ArrowUpRight
+              size={18}
+              className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
+            />
+          </a>
+        </div>
+      </Reveal>
     </Section>
   );
 }

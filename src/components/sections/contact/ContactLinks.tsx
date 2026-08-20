@@ -17,6 +17,11 @@ const links = [
     href: "https://wa.me/2349048801668",
   },
   {
+    label: "LinkedIn",
+    value: "linkedin.com/in/emmanuel-olajubaje",
+    href: "https://linkedin.com/in/emmanuel-olajubaje",
+  },
+  {
     label: "Links",
     value: "linktr.ee/emanncode",
     href: "https://linktr.ee/emanncode",

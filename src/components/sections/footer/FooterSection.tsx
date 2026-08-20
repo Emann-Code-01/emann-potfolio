@@ -71,7 +71,7 @@ export default function FooterSection() {
             <div className="flex items-center gap-4">
               {[
                 { href: "https://github.com/Emann-Code-01", Icon: GitHubIcon },
-                { href: "https://linkedin.com", Icon: LinkedInIcon },
+                { href: "https://linkedin.com/in/emmanuel-olajubaje", Icon: LinkedInIcon },
                 { href: "mailto:olajubajeifeoluwa93@gmail.com", Icon: ArrowUpRight },
               ].map(({ href, Icon }) => (
                 <a
